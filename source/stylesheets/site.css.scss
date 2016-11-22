@@ -9,6 +9,11 @@ $skyblue: #CEECEF;
 $green: #10C829;
 
 html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -120,6 +125,8 @@ header h1 {
   padding: 0.3em 0.5em;
   color: white;
   font-size: 1.2em;
+  text-align: left;
+  width: 100%;
 
   &__green {
     background-color: $green;
@@ -128,4 +135,14 @@ header h1 {
   &__red {
     background-color: $red;
   }
+
+  &__navy {
+    background-color: $navy;
+  }
+}
+
+p.hint {
+  font-size: 0.8em;
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
 }
