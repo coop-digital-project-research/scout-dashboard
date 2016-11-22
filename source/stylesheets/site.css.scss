@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import "normalize";
+
+$grey: #E7EDEA;
+$yellow: #FFC52C;
+$red: #FB0C06;
+$navy: #030D4F;
+$skyblue: #CEECEF;
+
+html {
+}
+
+body {
+  background: $grey;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: $navy;
+  padding: 0.5em;
+}
+
+header h1 {
+  padding-left: 0.4em;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 0;
+  color: $yellow;
+}
+
+.device-list-info {
+  background-color: $skyblue;
+  color: $navy;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid darken($grey, 10%);
+}
+
+.device-list {
+  margin: 0;
+  padding: 0;
+
+  &--device {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: white;
+    border-bottom: 1px solid darken($grey, 10%);
+    background-repeat: no-repeat;
+    background-position: 0.5em 50%;
+    position: relative;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 1em 1em 1em 3em;
+      text-decoration: none;
+      color: $navy;
+    }
+
+    &__tv {
+      background-image: image_url("tv.svg");
+    }
+
+    &__home {
+      background-image: image_url("home.svg");
+    }
+
+    &__laptop {
+      background-image: image_url("laptop.svg");
+    }
+
+    &__phone {
+      background-image: image_url("phone.svg");
+    }
+
+    &__warning {
+      position: absolute;
+      top: 0;
+      right: 1em;
+      height: 100%;
+      background-image: image_url("warning.svg");
+      background-repeat: no-repeat;
+      background-position: 100% 50%;
+      text-indent: -9999px;
+    }
+  }
+}
