@@ -86,6 +86,10 @@ header h1 {
       background-image: image_url("phone.svg");
     }
 
+    &__console {
+      background-image: image_url("console.svg");
+    }
+
     &__warning {
       position: absolute;
       top: 0;
